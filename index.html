@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxograma da Caça ao Tesouro pela Europa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .step {
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #e9f7ff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .step:hover {
+            background-color: #d0e7ff;
+        }
+        .arrow {
+            font-size: 2em;
+            color: #007bff;
+            text-align: center;
+            line-height: 1;
+        }
+        .details {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e9f7ff;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+        }
+        .details.active {
+            display: block;
+        }
+        .details h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fluxograma da Caça ao Tesouro pela Europa</h1>
+        <div class="flowchart">
+            <!-- Etapa 1 -->
+            <div class="step" onclick="showDetails('detalhe1')">
+                <span>1. Início</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 2 -->
+            <div class="step" onclick="showDetails('detalhe2')">
+                <span>2. Londres</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 3 -->
+            <div class="step" onclick="showDetails('detalhe3')">
+                <span>3. Paris</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 4 -->
+            <div class="step" onclick="showDetails('detalhe4')">
+                <span>4. Amsterdã</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 5 -->
+            <div class="step" onclick="showDetails('detalhe5')">
+                <span>5. Bruxelas</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 6 -->
+            <div class="step" onclick="showDetails('detalhe6')">
+                <span>6. Luxemburgo</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 7 -->
+            <div class="step" onclick="showDetails('detalhe7')">
+                <span>7. Zurique</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 8 -->
+            <div class="step" onclick="showDetails('detalhe8')">
+                <span>8. Munique</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 9 -->
+            <div class="step" onclick="showDetails('detalhe9')">
+                <span>9. Viena</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 10 -->
+            <div class="step" onclick="showDetails('detalhe10')">
+                <span>10. Praga</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 11 -->
+            <div class="step" onclick="showDetails('detalhe11')">
+                <span>11. Bratislava</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 12 -->
+            <div class="step" onclick="showDetails('detalhe12')">
+                <span>12. Budapeste</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 13 -->
+            <div class="step" onclick="showDetails('detalhe13')">
+                <span>13. Zagreb</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 14 -->
+            <div class="step" onclick="showDetails('detalhe14')">
+                <span>14. Ljubljana</span>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <!-- Etapa 15 -->
+            <div class="step" onclick="showDetails('detalhe15')">
+                <span>15. Roma</span>
+            </div>
+        </div>
+
+        <!-- Detalhes das Etapas -->
+        <div id="detalhe1" class="details">
+            <h2>1. Início</h2>
+            <p>Você encontra um velho diário com um mapa que indica um tesouro escondido na Torre de Paris.</p>
+        </div>
+
+        <div id="detalhe2" class="details">
+            <h2>2. Londres</h2>
+            <p>No British Museum, uma inscrição revela a próxima pista: "Onde o tempo e a história se encontram, busque a verdade."</p>
+        </div>
+
+        <div id="detalhe3" class="details">
+            <h2>3. Paris</h2>
+            <p>Na Torre Eiffel, você encontra uma mensagem que menciona viajar para "a cidade do chocolate e da cerveja."</p>
+        </div>
+
+        <div id="detalhe4" class="details">
+            <h2>4. Amsterdã</h2>
+            <p>No Museu Van Gogh, uma obra de arte revela uma pista criptografada: "Entre o sonho e a realidade, o caminho se revela."</p>
+        </div>
+
+        <div id="detalhe5" class="details">
+            <h2>5. Bruxelas</h2>
+            <p>Uma pista escondida em uma estátua leva você a um enigma que aponta para um pequeno país vizinho.</p>
+        </div>
+
+        <div id="detalhe6" class="details">
+            <h2>6. Luxemburgo</h2>
+            <p>No Palácio do Grão-Duque, um antigo pergaminho indica: "Daqui, siga para a terra dos Alpes e dos castelos."</p>
+        </div>
+
+        <div id="detalhe7" class="details">
+            <h2>7. Zurique</h2>
+            <p>Em uma biblioteca antiga, você encontra um livro com uma referência a uma cidade famosa por sua cerveja e sua história.</p>
+        </div>
+
+        <div id="detalhe8" class="details">
+            <h2>8. Munique</h2>
+            <p>No Hofbräuhaus, um mapa escondido em uma cervejeira aponta para uma cidade imperial ao leste.</p>
+        </div>
+
+        <div id="detalhe9" class="details">
+            <h2>9. Viena</h2>
+            <p>No Palácio de Schönbrunn, um enigma na Sala das Cores revela que você deve seguir para uma cidade onde o tempo parece parar.</p>
+        </div>
+
+        <div id="detalhe10" class="details">
+            <h2>10. Praga</h2>
+            <p>Na Praça da Cidade Velha, uma pista está escondida no relógio astronômico que leva a uma cidade ao sul.</p>
+        </div>
+
+        <div id="detalhe11" class="details">
+            <h2>11. Bratislava</h2>
+            <p>Uma mensagem na ponte de pedra sugere seguir para a cidade onde as águas do Danúbio se tornam mais largas.</p>
+        </div>
+
+        <div id="detalhe12" class="details">
+            <h2>12. Budapeste</h2>
+            <p>No Parlamento Húngaro, um código revela que a próxima pista está em uma cidade famosa por suas praias e colinas.</p>
+        </div>
+
+        <div id="detalhe13" class="details">
+            <h2>13. Zagreb</h2>
+            <p>Em um antigo café, uma pista esconde a próxima etapa: "Siga para a cidade que combina modernidade com história."</p>
+        </div>
+
+        <div id="detalhe14" class="details">
+            <h2>14. Ljubljana</h2>
+            <p>Na Ponte dos Dragões, uma pista revela a etapa final: "Vá para a cidade eterna onde o tesouro se esconde."</p>
+        </div>
+
+        <div id="detalhe15" class="details">
+            <h2>15. Roma</h2>
+            <p>Na cidade eterna, a pista final leva você a um antigo templo onde o tesouro está escondido.</p>
+            <p><strong>Tesouro Encontrado!</strong></p>
+        </div>
+    </div>
+
+    <script>
+        function showDetails(detailId) {
+            // Esconde todas as seções de detalhes
+            const details = document.querySelectorAll('.details');
+            details.forEach(detail => detail.classList.remove('active'));
+
+            // Mostra a seção de detalhes correspondente
+            const detail = document.getElementById(detailId);
+            if (detail) {
+                detail.classList.add('active');
+                window.scrollTo({ top: detail.offsetTop, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
